@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>iniciando estudos com o <strong>DOM</strong></h1>
+    <P>PARAGRAFO BONITINHO </P>
+    <p>OUTRO PARAGRAFO TESTANDO</p>
+    <div id="msg" onclick="teste()"> CLIQUE EM MIM </div>
+</body>
+<script>
+    var pzada = window.document.getElementsByTagName('p')[0]
+    let corpo = window.document.body;
+    function teste() {
+        window.document.write("amigo " + pzada.innerText)
+        pzada.style.color = 'blue'
+
+        corpo.style.backgroundColor = 'gray';
+        window.document.write('<br> <br> ' + window.document.getElementsByTagName('h1')[0].innerHTML)
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'red'
+        // window.document.write(window.document.head.title)
+    }
+</script>
+
+</html>

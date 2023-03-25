@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Multímetro </title>
+</head>
+
+<body>
+    <h2>Medidor de velocidade.</h2>
+    <h3 style="font-size: 15pt; font-family: Arial, Helvetica, sans-serif;">Velocidade máxima permitida = <strong
+            style="color: aqua;">60 Km/h</strong></h3>
+    <input type="number" id="ppzada" style="width: 7%;"> Km/h
+    <input type="button" onclick="verificar()" value="VERIFICAR">
+    <p id="lp"></p>
+    <script>
+
+        function verificar() {
+            let vel = document.getElementById("ppzada")
+
+            let msgzinha = document.getElementById('lp')
+            let velocidade = Number(vel.value)
+            msgzinha.innerHTML = `Sua velocidade atual é de <strong>${velocidade}Km/h<strong<`
+            if (velocidade > 60) {
+                msgzinha.innerHTML = `Você ultrapassou a velocidade máxima permitida`
+            } else {
+                return
+                msgzinha.innerHTML = `ta safe abaixo da velocidade maxima permitida`
+            }
+        }
+    </script>
+</body>
+
+</html>

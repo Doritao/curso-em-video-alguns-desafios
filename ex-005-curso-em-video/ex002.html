@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    De qual país você é ? <input type="text" id="caixinha" style="background-color: aqua;">
+    <input type="button" value="verificar" onclick="verify()" onmouseenter="yellow()" onmouseleave="gray()" id="butaum">
+    
+    <p id="paragrafo">Clique no botao <strong>verificar</strong> para checar se você é estrangeiro ou não</p>
+   
+    <script>
+        
+        let p = document.getElementById('paragrafo')
+        function verify() {
+            console.log(`blabla > ${caixinha.value}` )
+            if(caixinha.value == "Brasil") {
+                let caixinha = document.getElementById('caixinha')
+                p.innerHTML = `Você é <strong>Brasileiro<strong> !`
+            } else {
+                p.innerHTML = `Você é <strong>estrangeiro<strong> !`
+            }
+        }
+        function yellow() {
+            let button = document.getElementById('butaum')
+            button.style = "color: yellow"
+        }
+        function gray() { 
+            let button = document.getElementById('butaum')
+            button.style = "color: gray"
+        }
+
+    </script>
+</body>
+</html>

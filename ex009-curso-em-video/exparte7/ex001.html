@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de número</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="index.scss">
+
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div>
+            <p class="texto-1">Número (entre 1 e 100): <input type="number" class="number-add" id="number-add">
+                <input type="button" value="Adicionar" class="botao-adicionar" id="botao-adicionar" onclick="adicionar()">
+            </p>
+            <select name="Lista de numeros" id="tab-numeros" class="tabela-numeros" size="10">
+               
+            </select>
+            <input type="button" value="finalizar" class="finalizar-button" onclick="finalizar()">
+        </div>
+        <div name="resultado" class="resultado" id="resultado"></div>
+    </section>
+    <footer>
+        <p>&copy;Copyright</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

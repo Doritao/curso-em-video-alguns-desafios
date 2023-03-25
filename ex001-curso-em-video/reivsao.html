@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1
+        style="font-size: 15pt; font-family: Arial, Helvetica, sans-serif;background-color: aqua; width: 15%; height: 15%;">
+        Calculadora de somar </h1>
+    <input type="number" id="slot_n_1" style="width: 5%;">
+    <input type="button" value="+" id="plus_button" onclick="somar()"></div>
+    <input type="number" id="slot_n_2" style="width: 5%;">
+    <div id="resultado_slot">RESULTADO</div>
+</body>
+<script>
+    let slotn1 = document.getElementById("slot_n_1")
+    let slotn2 = document.getElementById("slot_n_2")
+    let result = document.getElementById("resultado_slot");
+    
+    function somar() {
+        if(!Number(slotn1.value) || !Number(slotn2.value)) alert('Digite os números corretamente')
+        let soma = Number(slotn1.value) + Number(slotn2.value);
+        result.innerText = soma
+    }
+</script>
+</html>
