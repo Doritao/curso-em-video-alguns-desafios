@@ -1,0 +1,53 @@
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+
+++ igual
+!= nao foir igual 
+4 !=  4 retorna false
+
+5==5 true
+5== '5' true;
+== ele analisa o valor e nao a grandeza, nao avalia o tipo
+
+=== igualdade restrita, se for identico, mesmo valor e tipo
+5 === '5' false;
+
+operador ternario
+teste ? true : false
+=============================
+
+media > 7?'aprovado':'reprovado'
+
+
+teste ? true : false
+se a condicao do teste for verdade ele retorna true
+ou pode false
+se a condicao nao for verdade 
+
+
+var r = idade =>18? ' MAIOR DE IDADE':'MENOR DE IDADE'
+
+
+DOM significa
+document 
+object
+model
+
+
+ selecionar elementos por MARCA
+ POR IDADEPOR NOME
+ POR CLASSE
+ E POR SELETOR
+
+
+
+TAG 
+ID 
+NAME 
+CLASS 
+SELECTOR

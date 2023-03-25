@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white; font-size: 50px;">Q BONOTINHO PRIMEIRA CALCULADORA DE CRIA</h1>
+    <input type="number" name="number1" id="number1" style="font-size: 20px;">
+
+    <h2 style="color: white; position: relative; left: 22%; margin-top: -2.25%;">PRIMEIRO NUMERO</h2>
+    <input type="number" name="number2" id="number2" style="font-size: 20px;">
+    <h2 style="color: white; position: relative; left: 22%; margin-top: -2%;">SEGUNDO NUMERO</h2>
+    <h2 id="resultado" style="color: white; background-color: rgb(255, 0, 0); font-size: 29pt;">RESULTADO = SEM
+        RESULTADO</h2>
+    <input type="button" ; value=" + " ; onclick="somar()" ; style="position:relative; left: 50px; font-size: 25px;">
+    <input type="button" ; value=" - " ; onclick="subtrair()" ; style="position:relative; left: 50px; font-size: 25px;">
+    <input type="button" ; value=" * " ; onlick="multiplicar()" ;
+        style="position:relative; left: 50px; font-size: 25px;">
+    <input type="button" ; value=" ^ " ; onclick="potencia()" ;
+        style="position: relative; left: 50px; font-size: 25px;">
+    <input type="button" ; value=" / " ; onclick="dividir()" ; style="position: relative; left: 50px; font-size: 25px;">
+    <input type="button" ; value=" %% " ; onclick="resto()" ; style="position: relative; left: 50px; font-size: 25px;">
+    <input type="button" ; value=" % " ; onclick="porcentagem()" ;
+        style="position: relative; left: 50px; font-size: 25px;">
+
+    <h2 style="color: black; background-color: white; position: relative; margin-top: 5%; left: 5px;">DOCUMENTAÇÃO DA
+        CALCULADORA<br><br>* MULTIPLICAR<br>+ SOMAR<br>- SUBTRAIR<br>^ POTENCIAÇÃO<BR>/ DIVISÃO<BR>%% ELE DIVIDE E PEGA
+        RESTO DA DIVISAO APENAS<br>% PORCENTAGEM </h2>
+    <script>
+        let result = document.getElementById("resultado");
+        let number1 = document.getElementById("number1")
+        let number2 = document.getElementById("number2")
+
+        function somar() {
+            let n1 = Number(number1.value)
+            let n2 = Number(number2.value)
+            var res = 0
+            res = n1 + n2 //parte da operação
+            result.innerText = `RESULTADO É ${res}`
+
+        }
+        function subtrair() {
+            let n1 = Number(number1.value)
+            let n2 = Number(number2.value)
+            var res = 0
+            res = n1 - n2 //parte da operação
+            result.innerText = `RESULTADO É ${res}`
+        }
+        function multiplicar() {
+            let n1 = Number(number1.value)
+            let n2 = Number(number2.value)
+            var res = 0
+            res = n1 * n2 //parte da operação
+            result.innerText = `RESULTADO É ${res}`
+        }
+        function potencia() {
+            let n1 = Number(number1.value)
+            let n2 = Number(number2.value)
+            var res = 0
+            res = n1 ** n2 //parte da operação
+            result.innerText = `RESULTADO É ${res}`
+        }
+        function dividir() {
+            let n1 = Number(number1.value)
+            let n2 = Number(number2.value)
+            var res = 0
+            res = n1 / n2 //parte da operação
+            result.innerText = `RESULTADO É ${res}`
+        }
+        function resto() {
+            let n1 = Number(number1.value)
+            let n2 = Number(number2.value)
+            var res = 0
+            res = n1 % n2 //parte da operação
+            result.innerText = `RESULTADO É ${res}`
+        }
+        function porcentagem() {
+            let n1 = Number(number1.value)
+            let n2 = Number(number2.value)
+            var res = (n1/100)*n2
+            result.innerText = `RESULTADO É ${res}`
+            //parte da operação
+        }
+    </script>
+</body>
+
+</html>

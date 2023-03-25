@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    body {
+        font-size: 15px;
+        color: blue;
+        background-color: rgb(139, 9, 102);
+    }
+    div {
+        font-size: 30px;
+        margin-left: 100px;
+        margin-top: 50px;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    }
+
+
+    
+ </style>
+<body>
+    <h1>CALCULADORA DE MULTIPLICAR</h1>
+    <input type="number" name="number1" id="number1" style="position: relative; left: 39px; font-size: larger;">
+    <input type="button" value="X" id="calculate" onclick="calcule()" style="position: relative; left: 50px; font-size: larger;">
+    <input type="number" name="number2" id="number2" style="position:relative; left: 60px; font-size: larger;">
+    
+    <div id="resposta"> RESPOSTA </div>
+    <script>
+        function calcule() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var n1 = Number(number1)
+            var n2 = Number(number2)
+            var res = n1 * n2
+            var resposta = document.getElementById("resposta")
+            resposta.innerText = res
+        }
+    </script>
+</body>
+
+</html>
